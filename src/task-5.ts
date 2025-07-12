@@ -1,4 +1,5 @@
-function logStatus(status) {
+type Direction = "loading"| "success"| "error";
+function logStatus(status: Direction): void {
     if (status === "loading") {
       console.log("Loading...");
     } else if (status === "success") {
@@ -8,4 +9,4 @@ function logStatus(status) {
     }
   }
   
-  logStatus("loading");
+logStatus("loading");
